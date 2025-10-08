@@ -1,0 +1,98 @@
+*, *::before, *::after {
+    margin: 0px;
+    line-height: 1.5em;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: #8A4FFF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: end;
+}
+nav button {
+    padding: 16px;
+    margin: 12px;
+    margin-bottom: 0;
+    width: 20%;
+    background-color: #8A4FFF;
+    border: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav button:active {
+    color: #C3BEF7;
+}
+
+.active {
+    background-color: white;
+    color: #8A4FFF;
+}
+.inactive {
+    display: none;
+}
+
+h1 {
+    color: #8A4FFF;
+    justify-self: center;
+    margin: 16px;
+    padding: 16px;
+}
+
+p {
+    width: 400px;
+    margin: 16px;
+    padding: 16px;
+    justify-self: center;
+}
+
+.image-container {
+    width: 100vw;
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.link {
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    width: auto;
+    color: #8A4FFF;
+    text-align: center;
+    transform: translate(-50%, -40%);
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 12px;
+    white-space: nowrap;
+    padding: 6px;
+}
+
+.link a:link {
+    color: #8A4FFF;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex: 1;
+    background: url(./restaurant-banner.jpg) center / cover no-repeat;
+}
+
